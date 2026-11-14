@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taskly — Plan your day</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <input type="checkbox" id="theme-toggle" class="hidden-control">
+
+  <header class="header">
+    <nav class="container nav">
+      <a class="logo" href="#"><span class="logo-icon">T</span> taskly</a>
+
+      <input type="checkbox" id="menu-toggle" class="hidden-control">
+      <label for="menu-toggle" class="burger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </label>
+
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a class="button nav-button" href="#contact">Get started</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="about">
+      <div class="hero-text">
+        <p class="eyebrow">PLAN BETTER. LIVE BETTER.</p>
+        <h1>Your day,<br><span>under control.</span></h1>
+        <p class="intro">A simple space to organize your tasks, focus on what matters and get things done.</p>
+        <a class="button" href="#contact">Try Taskly <span>→</span></a>
+        <p class="small-note">Free to start · Easy to use</p>
+      </div>
+      <div class="hero-image">
+        <img src="images/task-board.svg" alt="Simple Taskly task board preview">
+      </div>
+    </section>
+
+    <section class="features section" id="features">
+      <div class="container">
+        <div class="section-title">
+          <p class="eyebrow">FEATURES</p>
+          <h2>Everything in one place.</h2>
+          <p>Tools that keep your work clear and organized.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature">
+            <span class="feature-number">01</span>
+            <h3>Task boards</h3>
+            <p>Keep every task organized and easy to follow.</p>
+          </article>
+          <article class="feature">
+            <span class="feature-number">02</span>
+            <h3>Smart planning</h3>
+            <p>Plan your day and focus on your priorities.</p>
+          </article>
+          <article class="feature">
+            <span class="feature-number">03</span>
+            <h3>Reminders</h3>
+            <p>Remember deadlines without extra effort.</p>
+          </article>
+          <article class="feature">
+            <span class="feature-number">04</span>
+            <h3>Team sharing</h3>
+            <p>Share tasks and stay in sync with your team.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta container">
+      <div>
+        <p class="eyebrow">START SIMPLE</p>
+        <h2>Make space for what matters.</h2>
+      </div>
+      <a class="button button-light" href="#contact">Get early access →</a>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="container contact-wrap">
+        <div class="section-title contact-title">
+          <p class="eyebrow">EARLY ACCESS</p>
+          <h2>Be the first<br>to try Taskly.</h2>
+          <p>Leave your email to get an invitation to our beta.</p>
+        </div>
+
+        <form class="form" action="#" method="get">
+          <label for="email">Your email</label>
+          <input type="email" id="email" name="email" placeholder="name@example.com" required>
+
+          <label for="phone">Phone number <span>(optional)</span></label>
+          <input type="tel" id="phone" name="phone" placeholder="+7 777 000 00 00">
+
+          <label class="terms"><input type="checkbox" required> I agree to the Terms and Conditions.</label>
+          <button class="button submit" type="submit">Join the beta →</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-top">
+      <div>
+        <a class="logo" href="#"><span class="logo-icon">T</span> taskly</a>
+        <p class="footer-caption">A calmer way to get things done.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#features">Features</a>
+        <a href="#contact">Contact</a>
+        <a href="#contact">API docs</a>
+        <a href="https://instagram.com">Instagram</a>
+      </div>
+      <label class="theme-switch" for="theme-toggle">
+        <span class="light-text">☼ Light</span>
+        <span class="dark-text">☾ Dark</span>
+      </label>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 Taskly</span>
+      <span>All rights reserved.</span>
+    </div>
+  </footer>
+</body>
+</html>
